@@ -1,3 +1,8 @@
+ /**
+ * @author Salvatore Mariniello
+ * from https://github.com/mssalvo/MemoryPage
+ */
+ 
  function MemoryPage() {
 	    this.page = function () {
 	        var x = document.getElementsByTagName("*"), objHTML = {};
