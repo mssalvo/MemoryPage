@@ -32,7 +32,7 @@
                   case 'H5':
                   case 'H6':
                   case 'TD':
-                  if(x[i].contentEditable){
+                  if(x[i].contentEditable  && x[i].isContentEditable){
                   objHTML[x[i].id] = x[i].innerHTML;
                   }
                   break;
