@@ -115,13 +115,13 @@
         };
 		this.setHistory=function(){
 		var a_ = JSON.stringify(this.baseHistory, "");
-		if('localStorage' in window)
+		if('localStorage' in window && window['localStorage'])
 		localStorage.setItem('history_',a_||"");
 		else
 		this._wd.name=a_||"";
 		};
 		this.getHistory=function(){
-		if('localStorage' in window)
+		if('localStorage' in window && window['localStorage'])
 		return String(localStorage.getItem('history_')).length > 5 ? this._wd.eval('(' + localStorage.getItem('history_') + ')'):{};
 		else
 		return String(this._wd.name).length > 5 ? this._wd.eval('(' + this._wd.name + ')') : {};
