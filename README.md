@@ -17,7 +17,7 @@ use the method<br>
 memory_page.set ();
 <br>
 <br>
-
+only important map elements containing the <b>id attribute</b><br><br>
 excuse my ignorance of the English language
 
 
